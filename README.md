@@ -109,28 +109,18 @@ brew cask install google-chrome \
 
 ## Terminal
 
-+ 安装zsh
++ 安装zsh & 宝管理工具 antigen
 ```
-brew install zsh zsh-completions
+brew install zsh zsh-completions antigen
 ```
-
-+ 安装 oh-my-zsh
-```
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-```
-
-+ 配置zsh插件
-  + https://github.com/zsh-users/zsh-autosuggestions#oh-my-zsh
-```
-# download
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-# config like this.
-plugins=(git pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
-```
-+ 设置默认的shell
++ 设置默认的shell为zsh
 ```
 chsh -s /usr/local/bin/zsh
 ```
+
++ 配置zsh插件,参见.zshrc
+
+
 + 安装 vim & node & pyenv & aria2 & thefuck and so on.
 ```
 brew install python vim htop node pyenv aria2 thefuck httpie jq
@@ -139,10 +129,4 @@ brew install python vim htop node pyenv aria2 thefuck httpie jq
 
 ```
 pyenv install 3.6.4 && pyenv global 3.6.4 && pyenv rehash && pip install 'ipython[notebook]' gixy 
-```
-
-+ [z](https://github.com/rupa/z) auto jump
-
-```bash
-# 参考github readme说明
 ```
